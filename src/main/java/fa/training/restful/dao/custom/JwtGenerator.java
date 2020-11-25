@@ -6,6 +6,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.stereotype.Component;
 
+@Component
 public class JwtGenerator {
 	public String returnToken(User user){
         return Jwts.builder()

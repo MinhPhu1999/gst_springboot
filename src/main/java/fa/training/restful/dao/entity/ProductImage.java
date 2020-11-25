@@ -25,51 +25,52 @@ public class ProductImage {
 
     @Column
     private String image;
-
-    public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public Integer getProductId() {
-		return productId;
-	}
-
-	public void setProductId(Integer productId) {
-		this.productId = productId;
-	}
-
-	public String getImage() {
-		return image;
-	}
-
-	public void setImage(String image) {
-		this.image = image;
-	}
-
-	public String getImageType() {
-		return imageType;
-	}
-
-	public void setImageType(String imageType) {
-		this.imageType = imageType;
-	}
-
-	public byte[] getImageData() {
-		return imageData;
-	}
-
-	public void setImageData(byte[] imageData) {
-		this.imageData = imageData;
-	}
-
 	@Column
     private String imageType;
 
     @Lob
     @Column
     private byte[] imageData;
+
+//    public Integer getId() {
+//		return id;
+//	}
+//
+//	public void setId(Integer id) {
+//		this.id = id;
+//	}
+//
+//	public Integer getProductId() {
+//		return productId;
+//	}
+//
+//	public void setProductId(Integer productId) {
+//		this.productId = productId;
+//	}
+//
+//	public String getImage() {
+//		return image;
+//	}
+//
+//	public void setImage(String image) {
+//		this.image = image;
+//	}
+//
+//	public String getImageType() {
+//		return imageType;
+//	}
+//
+//	public void setImageType(String imageType) {
+//		this.imageType = imageType;
+//	}
+//
+//	public byte[] getImageData() {
+//		return imageData;
+//	}
+//
+//	public void setImageData(byte[] imageData) {
+//		this.imageData = imageData;
+//	}
+
+
 }

@@ -7,13 +7,14 @@ bin
 
 ### STS ###
 .apt_generated
+.apt_generated_test
 .classpath
 .factorypath
 .project
 .settings
 .springBeans
 .sts4-cache
-
+target
 ### IntelliJ IDEA ###
 .idea
 *.iws
