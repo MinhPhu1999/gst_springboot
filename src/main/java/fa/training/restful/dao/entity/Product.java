@@ -44,8 +44,8 @@ public class Product implements Serializable {
     private Integer category;
 
     @NotNull
-    @Column
-    private ProductCondition condition;
+    @Column(name = "product_condition")
+    private ProductCondition productCondition;
 
 //	public Integer getId() {
 //		return id;

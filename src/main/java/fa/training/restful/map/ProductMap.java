@@ -38,7 +38,7 @@ public class ProductMap {
                 .description(product.getDescription())
                 .manufacturer(manufacturer.getName())
                 .category(category.getName())
-                .condition(product.getCondition().toString())
+                .condition(product.getProductCondition().toString())
                 .image(imageLink)
                 .build();
     }

@@ -46,7 +46,7 @@ public class ProductService {
                                                     .description(request.getDescription())
                                                     .manufacturer(request.getManufacturer())
                                                     .category(request.getCategory())
-                                                    .condition(ProductCondition.fromInteger(request.getCondition()))
+                                                    .productCondition(ProductCondition.fromInteger(request.getCondition()))
                                                     .build());
 
             productImageService.storeImage(request.getImage(), newProduct.getId());
