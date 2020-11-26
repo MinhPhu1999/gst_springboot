@@ -7,7 +7,7 @@ import lombok.Data;
 @AllArgsConstructor
 public class UserLoginResponse {
     private String name;
-    //private String token1;
+    private String token;
 //	public String getName() {
 //		return name;
 //	}

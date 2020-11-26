@@ -25,7 +25,7 @@ public class UserService implements UserDetailsService {
         if (user == null) {
             throw new UsernameNotFoundException(request.getUsername());
         }
-        return new UserLoginResponse(user.getName());//, jwtGenerator.returnToken(user));
+        return new UserLoginResponse(user.getName(), jwtGenerator.returnToken(user));
     }
 
     @Override
