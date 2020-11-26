@@ -11,6 +11,7 @@ import javax.validation.Valid;
 import java.io.FileNotFoundException;
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("products")
 public class ProductController {
@@ -57,4 +58,3 @@ public class ProductController {
     }
 
 }
-

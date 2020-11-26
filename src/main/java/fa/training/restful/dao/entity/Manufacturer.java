@@ -14,6 +14,7 @@ import java.io.Serializable;
 @Table(name = "manufacturers")
 public class Manufacturer implements Serializable {
 
+	private static final long serialVersionUID = 1L;
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
