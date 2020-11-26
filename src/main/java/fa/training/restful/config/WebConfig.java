@@ -19,15 +19,6 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
     public JwtAuthenticationFilter jwtAuthenticationFilter() {
         return new JwtAuthenticationFilter();
     }
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-    	return new WebMvcConfigurer() {
-    		@Override
-    		public void addCorsMappings(CorsRegistry registry) {
-    			registry.addMapping("/**").allowedOrigins("http://localhost:4200");
-    		}
-		};
-    }
 
     @Autowired
     UserService userService;
