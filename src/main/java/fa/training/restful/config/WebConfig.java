@@ -1,6 +1,6 @@
 package fa.training.restful.config;
 
-import fa.training.restful.security.JwtAuthenticationFilter;
+//import fa.training.restful.security.JwtAuthenticationFilter;
 import fa.training.restful.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -15,10 +15,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @EnableWebSecurity
 public class WebConfig extends WebSecurityConfigurerAdapter {
-    @Bean
-    public JwtAuthenticationFilter jwtAuthenticationFilter() {
-        return new JwtAuthenticationFilter();
-    }
+//    @Bean
+//    public JwtAuthenticationFilter jwtAuthenticationFilter() {
+//        return new JwtAuthenticationFilter();
+//    }
 
     @Autowired
     UserService userService;
@@ -38,6 +38,7 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
         .antMatchers(HttpMethod.DELETE, "/products/delete/{id:\\d+}").hasAnyAuthority("admin");
 
 
-        http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+//        http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+        //http.addFilterBefore(UsernamePasswordAuthenticationFilter.class);
     }
 }

@@ -16,4 +16,5 @@ public class JwtGenerator {
                 .signWith(SignatureAlgorithm.HS512, AppConstant.JWT_SECRET)
                 .compact();
     }
+	
 }
